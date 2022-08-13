@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/JS/Reserva.js"></script>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="consulta mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h3>
+                        Lista Reservaciones de Aeropuerto
+                    </h3>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="table table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID RESERVACION</th>
+                                <th>CODIGO VUELO</th>
+                                <th>CODIGO PASAJERO</th>
+                                <th>NOMBRE PASAJERO</th>
+                                <th>CIUDAD DESTINO</th>
+                                <th>FECHA VUELO</th>
+                                <th>PRECIO VUELO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="DataReserva">
+                                                
+                           
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div class="Formulario">
+            <div class="row">
+                <div class="col-12">
+                    <h3>
+                        Agregar Reservacion 
+                    </h3>
+                </div>
+                <div class="col-12">
+                    <form class="reserva">
+                        <label for="">idReservacion</label>
+                        <input type="text" id="idReservacion" class="form-control" placeholder="Ingrese el Id Reservacion">
+                        <label for="">CodigoVuelo</label>
+                        <input type="text" id="CodigoVuelo" class="form-control" placeholder="Ingrese el Codigo de Vuelo">
+                        <label for="">CodigoPasajero</label>
+                        <input type="text" id="CodigoPasajero" class="form-control" placeholder="Ingrese el Codigo del Pasajero">
+                        <label for="">NombrePasajero</label>
+                        <input type="text" id="NombrePasajero" class="form-control" placeholder="Ingrese el Nombre del Pasajero">
+                        <label for="">CiudadDestino</label>
+                        <input type="text" id="CiudadDestino" class="form-control" placeholder="Ingrese la Ciudad Destino">
+                        <label for="">FechaVuelo</label>
+                        <input type="text" id="FechaVuelo" class="form-control" placeholder="Ingrese la Fecha de Vuelo">
+                        <label for="">PrecioVuelo</label>
+                        <input type="text" id="PrecioVuelo" class="form-control" placeholder="Ingrese el Precio del Vuelo">
+                        <hr>
+                        <div id="btnagregarreserva">
+                            <input type="sibmit" id="btnagregar" onclick="AgregarReserva()" value="Ingresar Reservacion" class="btn btn-success">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
