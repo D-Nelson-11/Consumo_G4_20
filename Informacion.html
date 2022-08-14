@@ -5,8 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
+    <style>
+        body{
+            background-color: #000;
+        }
+        .contenedor{
+            background-color: #151515;
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            color:#fff;
+            text-align: justify;
+            border-radius: 10px;
+        }
+    </style>
 <body>
-    
+    <div class="container">
+        <div class="row">     
+            <div class="col-12">
+                <div class="contenedor">
+                    <h2>Vuelo</h2>
+                    <hr>
+                    <p>En el formulario de Vuelo podremos llevar un control específico de cada vuelo que transportará a los pasajeros, se detallará un codigo de vuelo, la ciudad de origen y destino, la fecha en que se realizará el vuelo, el tipo de avión y la cantidad de kilometros que se recorreran a lo largo del vuelo. También se podrá Agregar, Editar y Eliminar los registros que se encuentran en la base de datos, a continuación, una breve explicación de la función de cada uno de los campos
+                </p>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="contenedor">
+                    <h2>Avion</h2>
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <hr>
+                    <p> 
+                        En este Fomulario podremos encontrar información de cada avión es decir; el tipo de avión las horas de vuelo, la capacidad de pasajeros con la que cuenta el avión, la fecha del primer vuelo, su país de construcción y la cantidad de vuelos que este ha realizado, además podremos Agregar, Editar y Eliminar los registros almacenados en la base de datos, y todo esto gracias a las siguientes funciones implementadas en backend:
+                        <ol>
+                            <li>Cargar aviones: En este método se verá toda la información de los aviones.</li>
+                            <li>Cargar Avion: Esta Función buscara un avión en específico mediante su “NumeroAvion”.</li>
+                            <li>Agregar Avion: En este método se insertarán nuevos aviones con sus respectivos datos.</li>
+                            <li>Actualizar Avion: Este método es para actualizar o modifAvióncualquier información de los aviones.</li>
+                            <li>Eliminar Avion: Este método es para eliminar cualquier avión.</li>
+                        </ol>    
+                    </p>
+                </div>
+            </div>   
+        </div>
+   
+        <div class="row">
+            
+            <div class="col-12">
+                <div class="contenedor">
+                    <h2>Reservación</h2>
+                    <hr>
+                    <p>El Formulario de Reservacion es un documento con un plan detallado con sus viajes a un país específico, en este formulario podremos agregar, editar y eliminar los diferentes datos de cada reservacion realizada, como ser:  
+                    <ol>
+                        <li>Id Reservacion: Es el ID único para cada Reservacion(no se puede editar)</li>
+                        <li>Codigo de Vuelo: Código específico para cada vuelo. </li>
+                        <li>Codigo de Pasajero: Código con el que se identificará cada Pasajero. </li>
+                        <li>Nombre de Pasajero: Datos personales del pasajero.</li>
+                        <li>Otros datos que se podrán encontrar, son la ciudad de destino, fecha de vuelo y sus respectivos precios</li>
+                    </ol> 
+                </p>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="contenedor">
+                    <h2>Pasajero</h2>
+                    <hr>
+                    <p>
+                        La Entidad Pasajero que se emplea en el formulario del mismo nombre(Pasajero), se crea con la finalidad de dar a conocer
+                        informacion especifica de las personas que solicitan viajar dicha informacion se divide en los siguientes campos:
+                        <ol>
+                            <li>CodigoPasajero: Los ayuda a reconocer que pasajero es sin necesidad de saber el nombre.</li>
+                            <li>Nombres: Son los nombres de los pasajero.</li>
+                            <li>Apellidos: Son los apellidos del pasajero.</li>
+                            <li>Fecha Registro: Es la fecha en el cual el pasajero viajo por primera vez.</li>
+                            <li>Nacionalidad: El pais de nacimiento del pasajero.</li>
+                            <li>Numero de Telefono: Para tener una comunicacion directa con el pasajero.</li>
+                            <li>Email: Para una comunicacion anticipada se envia un email.</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
 </body>
 </html>
